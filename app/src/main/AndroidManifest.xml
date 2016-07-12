@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fortino.whatscarlolipop">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".cambiarTelefonoActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".CambiarContrasenaActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".codigoActivacionActivity"
+            android:parentActivityName=".CambiarContrasenaActivity" />
+        <activity android:name=".splashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Agregar_VehiculoActivity"
+            android:parentActivityName=".nav_drawerActivity" />
+        <activity
+            android:name=".Modificar_VehiculoActivity"
+            android:parentActivityName=".nav_drawerActivity" />
+        <activity
+            android:name=".Info_VehiculoActivity"
+             />
+        <activity android:name=".Dispositivos_ActivosActivity" />
+        <activity
+            android:name=".Controlar_DispositivosActivity"
+            android:parentActivityName=".Vehiculo_ParticularActivity" />
+        <activity android:name=".Monitorear_VehiculoActivity"
+            android:parentActivityName=".Vehiculo_ParticularActivity"/>
+        <activity
+            android:name=".Vehiculo_ParticularActivity"
+            android:parentActivityName=".nav_drawerActivity" />
+        <activity
+            android:name=".nav_drawerActivity"
+            android:label="@string/title_activity_nav_drawer"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".RegistrarActivity"
+            android:parentActivityName=".MainActivity"></activity>
+    </application>
+
+</manifest>

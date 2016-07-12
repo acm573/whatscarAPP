@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Whatscar</string>
+    <string name="log_ModContra">Modificar contraseña</string>
+    <string name="log_CamTelefo">Cambiar teléfono</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_Moto">Agregar vehiculo</string>
+    <string name="act_Instruccion">Introduce el código que te enviamos al número de teléfono:(+52)4421234565</string>
+    <string name="title_activity_monitorear">MonitorearActivity</string>
+    <string name="title_activity_localizar__vehiculos">Map</string>
+    <string name="title_activity_nav_drawer"></string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+</resources>

@@ -1,0 +1,4 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('kinvey-android-lib-2.10.4.aar'))
+dependencies {
+}

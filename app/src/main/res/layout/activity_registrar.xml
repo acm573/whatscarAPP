@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F4"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.fortino.whatscarlolipop.RegistrarActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/liyNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:layout_x="6dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etRegNomUsuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint="Nombre"
+                    android:inputType="textPersonName"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/liyEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/liyNombre"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_x="6dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etRegEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:hint="Correo electrónico"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/liyTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/liyEmail"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_x="6dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etRegTelefono"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:hint="Teléfono"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/liyContrasena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/liyTelefono"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_x="6dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etRegContrasena"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:hint="Contraseña"
+                    android:inputType="textPassword"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/liyReContrasena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/liyContrasena"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_x="6dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etRegRepContrasena"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:hint="Repetir Contraseña"
+                    android:inputType="textPassword"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/liyEnviarRegistro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/liyReContrasena"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnRegUsuario"
+                    android:layout_width="310dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/boton_redondo"
+                    android:onClick="Validar"
+                    android:text="REGISTRARSE"
+                    android:textColor="#FBFFFF"
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
